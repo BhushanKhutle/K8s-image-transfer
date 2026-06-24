@@ -1,0 +1,1 @@
+{"version":3,"file":"transferController.d.ts","sourceRoot":"","sources":["../../src/controllers/transferController.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAI5C,eAAO,MAAM,kBAAkB;uBACJ,OAAO,OAAO,QAAQ;uBAuBtB,OAAO,OAAO,QAAQ;gBAS7B,OAAO,OAAO,QAAQ;oBAUlB,OAAO,OAAO,QAAQ;kBAWxB,OAAO,OAAO,QAAQ;0BAUpB,OAAO,OAAO,QAAQ;CA2B7C,CAAC"}

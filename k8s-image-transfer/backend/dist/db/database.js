@@ -1,23 +1,25 @@
-import Database from 'better-sqlite3';
-import path from 'path';
-import fs from 'fs';
-
-const DB_PATH = process.env.DB_PATH || path.join(__dirname, '../../data/k8s-transfer.db');
-
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.db = void 0;
+exports.initializeDatabase = initializeDatabase;
+const better_sqlite3_1 = __importDefault(require("better-sqlite3"));
+const path_1 = __importDefault(require("path"));
+const fs_1 = __importDefault(require("fs"));
+const DB_PATH = process.env.DB_PATH || path_1.default.join(__dirname, '../../data/k8s-transfer.db');
 // Ensure data directory exists
-const dataDir = path.dirname(DB_PATH);
-if (!fs.existsSync(dataDir)) {
-  fs.mkdirSync(dataDir, { recursive: true });
+const dataDir = path_1.default.dirname(DB_PATH);
+if (!fs_1.default.existsSync(dataDir)) {
+    fs_1.default.mkdirSync(dataDir, { recursive: true });
 }
-
-export const db: Database.Database = new Database(DB_PATH);
-
+exports.db = new better_sqlite3_1.default(DB_PATH);
 // Enable WAL mode for better concurrency
-db.pragma('journal_mode = WAL');
-db.pragma('foreign_keys = ON');
-
-export function initializeDatabase(): void {
-  db.exec(`
+exports.db.pragma('journal_mode = WAL');
+exports.db.pragma('foreign_keys = ON');
+function initializeDatabase() {
+    exports.db.exec(`
     CREATE TABLE IF NOT EXISTS node_configs (
       id TEXT PRIMARY KEY,
       node_name TEXT NOT NULL UNIQUE,
@@ -78,8 +80,7 @@ export function initializeDatabase(): void {
       ('transfer_timeout', '300000'),
       ('auto_refresh_interval', '60');
   `);
-
-  console.log('Database initialized at:', DB_PATH);
+    console.log('Database initialized at:', DB_PATH);
 }
-
-export default db;
+exports.default = exports.db;
+//# sourceMappingURL=database.js.map

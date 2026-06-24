@@ -1023,3 +1023,7 @@ SyntaxError: Unexpected token 'n', "null" is not valid JSON
 ::ffff:127.0.0.1 - - [24/Jun/2026:09:39:45 +0000] "GET /api/node-configs/con/test HTTP/1.1" 200 68 "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
 ::ffff:127.0.0.1 - - [24/Jun/2026:09:39:45 +0000] "GET /api/node-configs/con/test HTTP/1.1" 200 68 "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
 ::ffff:127.0.0.1 - - [24/Jun/2026:09:39:54 +0000] "GET /api/node-configs/con/test HTTP/1.1" 200 65 "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:09:40:17 +0000] "GET /api/transfer-jobs/stream/events HTTP/1.1" 200 - "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[INFO] 15:11:48 Restarting: /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/src/db/database.ts has been modified
+Database initialized at: /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/data/k8s-transfer.db
+🚀 K8s Image Transfer Manager API running on port 3001

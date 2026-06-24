@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  backend:
+    image: k8s-transfer-backend:1.0
+    container_name: k8s-transfer-backend
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - DB_PATH=/app/data/k8s-transfer.db
+      - CORS_ORIGIN=https://rposk8spp-grocery.ril.com
+    volumes:
+      - db_data:/app/data
+    ports:
+      - "3001:3001"
+    network_mode: host
+
+volumes:
+  db_data:
+    name: k8s-transfer-db

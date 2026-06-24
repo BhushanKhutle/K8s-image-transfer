@@ -1,24 +1,19 @@
 FROM node:20-alpine
 
-# Install kubectl and ssh client
-RUN apk add --no-cache \
-    openssh-client \
-    curl \
-    && curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" \
-    && chmod +x kubectl \
-    && mv kubectl /usr/local/bin/kubectl
+RUN apk add --no-cache openssh-client sshpass
 
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm ci
 
 COPY tsconfig.json ./
 COPY src ./src
 
 RUN npm run build
 
-# Create data directory
+RUN npm prune --production
+
 RUN mkdir -p /app/data
 
 ENV NODE_ENV=production
