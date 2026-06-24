@@ -1,0 +1,652 @@
+nohup: ignoring input
+
+> k8s-image-transfer-backend@1.0.0 dev
+> ts-node-dev --respawn --transpile-only src/index.ts
+
+[INFO] 13:28:59 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.3)
+Database initialized at: /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/data/k8s-transfer.db
+🚀 K8s Image Transfer Manager API running on port 3001
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:04 +0000] "GET /health HTTP/1.1" 200 54 "-" "curl/8.17.0"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:11 +0000] "GET /api/transfer-jobs HTTP/1.1" 200 11 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:11 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:11 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:11 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:11 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:11 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:12 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:12 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:12 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:13 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:13 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:13 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:13 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:13 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:13 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:14 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:15 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:32 +0000] "POST /api/images/refresh HTTP/1.1" 200 79 "-" "curl/8.17.0"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:41 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:41 +0000] "GET /api/images?search= HTTP/1.1" 200 496 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:07:59:41 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:24 +0000] "GET /api/images HTTP/1.1" 200 496 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:24 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:30 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:30 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:30 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:30 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:30 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:30 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:35 +0000] "GET /api/images/nginx%3Alatest/missing-nodes HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[Transfer 6d1315b9-860b-4388-9152-b3c3c8902486] Connecting to worker2...
+[Transfer 6d1315b9-860b-4388-9152-b3c3c8902486] Transferring nginx:latest from worker2 to node1...
+[Transfer] Running: ssh -i /tmp/k8s-key-1782288036338-b8uf57q9a8w.pem -o StrictHostKeyChecking=no -p 22 root@172.31.33.219 "docker save nginx:latest" | ssh -i /tmp/k8s-key-1782288036338-j6joyw7j4y.pem -o StrictHostKeyChecking=no -p 22 root@172.31.10.59 "docker load"
+[Transfer 6d1315b9-860b-4388-9152-b3c3c8902486] Image loaded on node1 successfully
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:39 +0000] "POST /api/transfer-image HTTP/1.1" 202 269 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:39 +0000] "GET /api/transfer-jobs HTTP/1.1" 200 269 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:39 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:39 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:40 +0000] "GET /api/images/alpine%3Alatest/missing-nodes HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[Transfer 4fe96072-7b3b-4af6-a7a4-4e7ba57875c7] Connecting to worker2...
+[Transfer 4fe96072-7b3b-4af6-a7a4-4e7ba57875c7] Transferring alpine:latest from worker2 to node1...
+[Transfer] Running: ssh -i /tmp/k8s-key-1782288041470-0pfnj3ynnzfc.pem -o StrictHostKeyChecking=no -p 22 root@172.31.33.219 "docker save alpine:latest" | ssh -i /tmp/k8s-key-1782288041470-hr8ls7sxv4v.pem -o StrictHostKeyChecking=no -p 22 root@172.31.10.59 "docker load"
+[Transfer 4fe96072-7b3b-4af6-a7a4-4e7ba57875c7] Image loaded on node1 successfully
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:41 +0000] "POST /api/transfer-image HTTP/1.1" 202 269 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:41 +0000] "GET /api/transfer-jobs/stream/events HTTP/1.1" 200 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:41 +0000] "GET /api/transfer-jobs HTTP/1.1" 200 528 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:41 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:42 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:43 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:43 +0000] "GET /api/images?search= HTTP/1.1" 200 494 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:43 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:54 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:54 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:54 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:54 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:55 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:56 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:56 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:00:56 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:00 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:00 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:00 +0000] "GET /api/images HTTP/1.1" 200 494 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:00 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:00 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:00 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:01 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:01 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:01 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:02 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:03 +0000] "POST /api/images/refresh?nodeName=node1 HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:04 +0000] "POST /api/images/refresh?nodeName=worker2 HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:06 +0000] "POST /api/images/refresh?nodeName=worker2 HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:08 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:08 +0000] "GET /api/node-configs HTTP/1.1" 304 - "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:08 +0000] "GET /api/node-configs HTTP/1.1" 304 - "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:08 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+kubectl discovery failed, using cached nodes: Command failed: /usr/local/bin/kubectl get nodes -o custom-columns=NAME:.metadata.name,IP:.status.addresses[0].address,STATUS:.status.conditions[-1].type,VERSION:.status.nodeInfo.kubeletVersion,ROLES:.metadata.labels.kubernetes\.io/role --no-headers 2>/dev/null || /usr/local/bin/kubectl get nodes -o wide --no-headers
+/bin/sh: line 1: /usr/local/bin/kubectl: No such file or directory
+
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:09 +0000] "GET /api/nodes?discover=true HTTP/1.1" 200 426 "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:13 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:13 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:13 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:13 +0000] "GET /api/stats HTTP/1.1" 200 55 "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:13 +0000] "GET /api/stats HTTP/1.1" 304 - "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:13 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:13 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:13 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:22 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:22 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:22 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:22 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:23 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:23 +0000] "GET /api/node-configs HTTP/1.1" 304 - "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:23 +0000] "GET /api/node-configs HTTP/1.1" 304 - "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:23 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/nodes" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:23 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:23 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:23 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:23 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:24 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:24 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:24 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:25 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:25 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:25 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:25 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:25 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:25 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:30 +0000] "GET /api/transfer-jobs/stream/events HTTP/1.1" 200 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:53 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:53 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:53 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:53 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:53 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:53 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:54 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:54 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:54 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:54 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:54 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:54 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:58 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:58 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:58 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:58 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:58 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:01:58 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+SyntaxError: Unexpected token 'n', "null" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:165:10)
+    at parse (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/types/json.js:86:15)
+    at /home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:238:16)
+    at done (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ec2-user/K8s-image-transfer/k8s-image-transfer/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:00 +0000] "POST /api/images/refresh HTTP/1.1" 500 60 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:00 +0000] "GET /api/images?search= HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:00 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:13 +0000] "GET /api/transfer-jobs/stream/events HTTP/1.1" 200 - "http://65.2.75.137:8082/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:16 +0000] "GET /api/images HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:16 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:16 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:19 +0000] "POST /api/images/refresh HTTP/1.1" 200 79 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:21 +0000] "GET /api/images?search= HTTP/1.1" 200 496 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:21 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:23 +0000] "POST /api/images/refresh HTTP/1.1" 200 79 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:25 +0000] "GET /api/images?search= HTTP/1.1" 200 496 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:25 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:27 +0000] "GET /api/images/alpine%3Alatest/missing-nodes HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[Transfer 5b226625-8e76-4a54-ae7a-09ab9c68d4c7] Connecting to worker2...
+[Transfer 5b226625-8e76-4a54-ae7a-09ab9c68d4c7] Transferring alpine:latest from worker2 to node1...
+[Transfer] Running: ssh -i /tmp/k8s-key-1782288148482-34uu2we5wj.pem -o StrictHostKeyChecking=no -p 22 root@172.31.33.219 "docker save alpine:latest" | ssh -i /tmp/k8s-key-1782288148482-dexwbshk1ce.pem -o StrictHostKeyChecking=no -p 22 root@172.31.10.59 "docker load"
+[Transfer 5b226625-8e76-4a54-ae7a-09ab9c68d4c7] Image loaded on node1 successfully
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:28 +0000] "POST /api/transfer-image HTTP/1.1" 202 269 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:28 +0000] "GET /api/transfer-jobs/stream/events HTTP/1.1" 200 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:28 +0000] "GET /api/transfer-jobs HTTP/1.1" 200 787 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:28 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:28 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:31 +0000] "POST /api/images/refresh HTTP/1.1" 200 79 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:33 +0000] "GET /api/images?search= HTTP/1.1" 200 495 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:33 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:34 +0000] "GET /api/images/nginx%3Alatest/missing-nodes HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[Transfer 2647c7b8-1520-4d29-b85a-889ab5c11883] Connecting to worker2...
+[Transfer 2647c7b8-1520-4d29-b85a-889ab5c11883] Transferring nginx:latest from worker2 to node1...
+[Transfer] Running: ssh -i /tmp/k8s-key-1782288155518-4f3t7g1u1ir.pem -o StrictHostKeyChecking=no -p 22 root@172.31.33.219 "docker save nginx:latest" | ssh -i /tmp/k8s-key-1782288155519-3ldw4blf0oo.pem -o StrictHostKeyChecking=no -p 22 root@172.31.10.59 "docker load"
+[Transfer 2647c7b8-1520-4d29-b85a-889ab5c11883] Image loaded on node1 successfully
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:38 +0000] "POST /api/transfer-image HTTP/1.1" 202 269 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:38 +0000] "GET /api/transfer-jobs/stream/events HTTP/1.1" 200 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:38 +0000] "GET /api/transfer-jobs HTTP/1.1" 200 1046 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:38 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:38 +0000] "GET /api/transfer-jobs HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:40 +0000] "POST /api/images/refresh HTTP/1.1" 200 79 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:42 +0000] "GET /api/images?search= HTTP/1.1" 200 494 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:42 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:43 +0000] "POST /api/images/refresh HTTP/1.1" 200 79 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:46 +0000] "GET /api/images?search= HTTP/1.1" 200 494 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:46 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:50 +0000] "POST /api/images/refresh HTTP/1.1" 200 79 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:52 +0000] "GET /api/images?search= HTTP/1.1" 200 496 "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [24/Jun/2026:08:02:52 +0000] "GET /api/nodes?discover=false HTTP/1.1" 304 - "http://65.2.75.137:8082/images" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"

@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: k8s-transfer-backend
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - DB_PATH=/app/data/k8s-transfer.db
+      - SSH_TIMEOUT=30000
+      - TRANSFER_TIMEOUT=300000
+      - CORS_ORIGIN=http://localhost:3000
+    volumes:
+      - db_data:/app/data
+      # Mount kubeconfig for kubectl discovery
+      - ${KUBECONFIG:-$HOME/.kube/config}:/root/.kube/config:ro
+      # Mount SSH keys if needed
+      # - ${HOME}/.ssh:/root/.ssh:ro
+    ports:
+      - "3001:3001"
+    networks:
+      - k8s-transfer
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: k8s-transfer-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - k8s-transfer
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  db_data:
+    name: k8s-transfer-db
+
+networks:
+  k8s-transfer:
+    name: k8s-transfer
+    driver: bridge
