@@ -20,7 +20,7 @@ router.get('/node-configs/:nodeName/test', nodesController.testConnection);
 // Image routes
 router.get('/images', imagesController.getImages);
 router.post('/images/refresh', imagesController.refreshImages);
-router.get('/images/:imageName/missing-nodes', imagesController.getMissingNodes);
+router.get('/images/:imageName(*)/missing-nodes', imagesController.getMissingNodes);
 
 // Transfer routes
 router.post('/transfer-image', transferController.startTransfer);

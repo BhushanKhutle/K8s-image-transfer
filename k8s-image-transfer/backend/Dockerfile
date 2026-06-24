@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM docker.rril.ril.com/testing/docker/node:20-alpine
 
 RUN apk add --no-cache openssh-client sshpass
 
@@ -23,3 +23,4 @@ ENV DB_PATH=/app/data/k8s-transfer.db
 EXPOSE 3001
 
 CMD ["node", "dist/index.js"]
+

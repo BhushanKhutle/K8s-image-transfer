@@ -8,6 +8,7 @@ import routes from './routes';
 dotenv.config();
 
 const app = express();
+app.set('router options', { strict: false });
 const PORT = process.env.PORT || 3001;
 
 // Middleware
