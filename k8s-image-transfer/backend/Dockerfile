@@ -1,4 +1,4 @@
-FROM docker.rril.ril.com/testing/docker/node:20-alpine
+FROM node:20-alpine
 
 RUN apk add --no-cache openssh-client sshpass
 
